@@ -1,0 +1,97 @@
+@font-face{
+    font-family: 'Mamelon';
+    src: url('../font/Mamelon.eot') format('eot'),
+         url('../font/Mamelon.woff') format('woff'),
+         url('../font/Mamelon.ttf') format('ttf');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background: url(../img/IMG_7926.JPG) center center fixed no-repeat ;
+    background-size: cover;
+    font-family: 'Mamelon';
+}
+
+.main {
+    height: 400px;
+    width: 600px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    margin:70px 250px;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(4,1fr); 
+}
+
+.main .iconbox{
+    background-color: white;
+    grid-column: span 4;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin: 60px 0 0 30px;
+    line-height: 325px;
+    text-align: center;
+    position: relative;
+    letter-spacing: 2px;
+    font-size: 23px;
+    color: rgba(110, 108, 108, 0.808);
+}
+
+.main .iconbox #icon {
+    background: url(../img/Kendama.png) no-repeat center center;
+    background-size: cover;
+    transform: rotate(0.125turn);
+    opacity: 0.7;
+    height: 125px;
+    width: 125px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.main .mylistbox {
+    grid-column: span 6;
+    grid-row: span 4;
+}
+
+#memo {
+    width: 170px;
+    height: 30px;
+    margin: 60px 10px 20px 30px;
+    padding: 0 0 0 10px;
+    border-radius: 2px;
+}
+#add {
+    width: 75px;
+    height: 30px;
+    background-color: rgb(241, 177, 80);
+    border-radius: 2px;
+}
+
+.list {
+    border-top: 1px gray solid;
+    padding-top: 20px;
+    padding-right: 80px;
+}
+
+.list li {
+    margin: 5px 0 5px 35px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    list-style: none;
+    font-size: 25px;
+    line-height: 30px;
+    color: rgb(85, 79, 79);
+    border-bottom: 1px rgba(128, 128, 128, 0.555) solid;
+}
+
+.list li a {
+    text-decoration: none;
+    margin-right: 8px;
+}
+
